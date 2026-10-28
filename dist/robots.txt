@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.eina-nova.es/sitemap.xml

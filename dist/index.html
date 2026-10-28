@@ -4,7 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f5ef">
-  <meta name="description" content="Eina Nova Studio crea herramientas digitales prácticas para organizar tareas reales.">
+  <meta name="description" content="Estudio independiente de aplicaciones para autoescuelas, fútbol base, compras y movilidad eléctrica. Conoce nuestros proyectos en desarrollo y cuéntanos tu idea.">
+  <link rel="canonical" href="https://www.eina-nova.es/">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Eina Nova Studio">
+  <meta property="og:title" content="Eina Nova Studio · Herramientas digitales con propósito">
+  <meta property="og:description" content="Conoce TurnoVial, Míster Cantera, Mi Compra y EVBitácora: proyectos digitales para organizar tareas reales.">
+  <meta property="og:url" content="https://www.eina-nova.es/">
+  <meta property="og:image" content="https://www.eina-nova.es/assets/icono-perfil.png">
+  <meta name="twitter:card" content="summary">
   <title>Eina Nova Studio — Herramientas digitales para organizar lo que importa</title>
   <link rel="icon" type="image/png" href="/assets/icono-perfil.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,20 +31,29 @@
     .social-link{color:var(--ink);font-weight:700;text-decoration:none;padding:8px 12px;border:1px solid #b8c8b6;border-radius:999px;white-space:nowrap}.social-link:hover{background:#eaf0e2}.social-link:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
     @media(max-width:800px){.nav{gap:14px}.nav a:not(.contact){display:none}.hero{grid-template-columns:1fr;gap:22px;padding:60px 0}.hero-art{min-height:340px}.art-card{width:min(100%,390px)}.float-note{right:2px}.section-head,.approach{display:block}.section-head p{margin-top:17px}.approach-copy{margin-top:24px}.grid{grid-template-columns:1fr}.principles{grid-template-columns:1fr}.contact-box{display:block;padding:34px 27px}.contact-box .button{margin-top:24px}footer{gap:20px;align-items:flex-start;flex-direction:column}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+    .skip-link{position:absolute;left:20px;top:-100px;background:var(--ink);color:white;padding:12px 20px;z-index:10}.skip-link:focus{top:12px}
+    a:focus-visible,summary:focus-visible{outline:3px solid #668248;outline-offset:5px}section[id]{scroll-margin-top:24px}
+    .project{gap:16px;transition:transform .2s,box-shadow .2s}.product:hover{box-shadow:0 14px 35px #173b3a0c}.project-link{margin-top:18px;font-size:14px;font-weight:700;text-underline-offset:5px}
+    .faq{padding-top:36px}.faq details{border-top:1px solid var(--line);padding:22px 0}.faq details:last-child{border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;font-family:Manrope,Arial,sans-serif;font-weight:700;font-size:19px}.faq details p{max-width:780px;color:var(--muted)}
+    .hero{min-height:600px}.hero .lead{max-width:570px}.product{min-height:250px}.button:hover{filter:brightness(.95)}
+    @media(max-width:480px){.wrap{width:calc(100% - 36px)}header{height:80px;gap:12px}.wordmark{width:170px}.nav .contact{padding:10px 13px}.eyebrow{font-size:10px;letter-spacing:.06em}h1{font-size:46px}.hero{padding-top:38px}.lead{font-size:17px}.hero-art{min-height:280px}.art-card{border-radius:28px}.float-note{bottom:22px;right:0}section{padding:60px 0}.product{padding:23px}.contact-box a{overflow-wrap:anywhere}.contact-box{padding:30px 23px}.faq summary{font-size:17px}}
   </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Eina Nova Studio", "url": "https://www.eina-nova.es/", "logo": "https://www.eina-nova.es/assets/icono-perfil.png", "email": "einanovastudio@gmail.com", "sameAs": ["https://www.instagram.com/einanovastudio/"], "description": "Estudio independiente de productos digitales prácticos."}</script>
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <header class="wrap">
     <a href="#inicio" aria-label="Eina Nova Studio, inicio"><img class="wordmark" src="/assets/eina-nova-studio.svg" alt="Eina Nova Studio — Herramientas digitales para organizar lo que importa"></a>
     <nav class="nav" aria-label="Navegación principal"><a href="#productos">Proyectos</a><a href="#estudio">El estudio</a><a class="contact" href="#contacto">Contacto</a></nav>
   </header>
-  <main>
+  <main id="contenido">
     <section class="hero wrap" id="inicio">
       <div>
         <span class="eyebrow"><i class="dot"></i> Estudio independiente de productos digitales</span>
         <h1>Herramientas digitales para <em>organizar lo que importa.</em></h1>
         <p class="lead">Creamos aplicaciones prácticas para tareas reales: enseñar, coordinar un equipo, ordenar compras y entender la movilidad eléctrica.</p>
-        <div class="actions"><a class="button primary" href="#productos">Conoce los proyectos</a><a class="button secondary" href="#estudio">Así trabajamos</a></div>
+        <div class="actions"><a class="button primary" href="#productos">Explora los proyectos</a><a class="button secondary" href="#contacto">Cuéntanos tu idea</a></div>
       </div>
       <div class="hero-art" aria-label="Símbolo de Eina Nova Studio">
         <div class="art-card"><img class="hero-icon" src="/assets/icono-perfil.png" alt="Símbolo geométrico de Eina Nova Studio"><div class="float-note"><strong>Ideas útiles.</strong> Productos con propósito.</div></div>
@@ -44,17 +63,23 @@
       <div class="wrap">
         <div class="section-head"><div><span class="kicker">En marcha</span><h2>Cuatro ideas, un mismo propósito.</h2></div><p>Proyectos en desarrollo que nacen de necesidades concretas. Iremos compartiendo novedades a medida que estén listos.</p></div>
         <div class="grid">
-          <article class="product"><div class="product-top"><div><h3>TurnoVial</h3><p>Una herramienta para organizar las clases y el seguimiento del aprendizaje en la autoescuela.</p></div><span class="number">01</span></div><span class="status">En desarrollo</span></article>
-          <article class="product"><div class="product-top"><div><h3>Míster Cantera</h3><p>Organización práctica para el día a día de entrenadores y equipos de fútbol base.</p></div><span class="number">02</span></div><span class="status">En desarrollo</span></article>
-          <article class="product"><div class="product-top"><div><h3>Mi Compra</h3><p>Una forma sencilla de ordenar tickets y tener las compras más a mano.</p></div><span class="number">03</span></div><span class="status">En desarrollo</span></article>
-          <article class="product"><div class="product-top"><div><h3>EVBitácora</h3><p>Un espacio para registrar y consultar información sobre la carga de vehículos eléctricos.</p></div><span class="number">04</span></div><span class="status">En desarrollo</span></article>
+          <article class="product"><div class="product-top"><div><h3>TurnoVial</h3><p>Una herramienta para organizar las clases y el seguimiento del aprendizaje en la autoescuela.</p></div><span class="number">01</span></div><span class="status">En desarrollo</span><a class="project-link" href="mailto:einanovastudio@gmail.com?subject=Consulta%20sobre%20TurnoVial">Consultar sobre TurnoVial <span aria-hidden="true">↗</span></a></article>
+          <article class="product"><div class="product-top"><div><h3>Míster Cantera</h3><p>Organización práctica para el día a día de entrenadores y equipos de fútbol base.</p></div><span class="number">02</span></div><span class="status">En desarrollo</span><a class="project-link" href="mailto:einanovastudio@gmail.com?subject=Consulta%20sobre%20Míster%20Cantera">Consultar sobre Míster Cantera <span aria-hidden="true">↗</span></a></article>
+          <article class="product"><div class="product-top"><div><h3>Mi Compra</h3><p>Una forma sencilla de ordenar tickets y tener las compras más a mano.</p></div><span class="number">03</span></div><span class="status">En desarrollo</span><a class="project-link" href="mailto:einanovastudio@gmail.com?subject=Consulta%20sobre%20Mi%20Compra">Consultar sobre Mi Compra <span aria-hidden="true">↗</span></a></article>
+          <article class="product"><div class="product-top"><div><h3>EVBitácora</h3><p>Un espacio para registrar y consultar información sobre la carga de vehículos eléctricos.</p></div><span class="number">04</span></div><span class="status">En desarrollo</span><a class="project-link" href="mailto:einanovastudio@gmail.com?subject=Consulta%20sobre%20EVBitácora">Consultar sobre EVBitácora <span aria-hidden="true">↗</span></a></article>
         </div>
       </div>
     </section>
     <section class="wrap" id="estudio">
       <div class="approach"><div><span class="kicker">El estudio</span><h2>Menos complicaciones. Más claridad.</h2></div><div><p class="approach-copy">Eina Nova Studio es un estudio independiente que convierte problemas cotidianos en productos digitales claros y útiles. Empezamos escuchando a quienes hacen el trabajo; después diseñamos y mejoramos cada herramienta paso a paso.</p><div class="principles"><div class="principle"><b>Útil desde el origen</b><span>Partimos de situaciones reales y concretas.</span></div><div class="principle"><b>Claro para todos</b><span>La tecnología debe ayudar, no añadir ruido.</span></div><div class="principle"><b>Mejora continua</b><span>Avanzamos con cuidado y aprendemos al probar.</span></div></div></div></div>
     </section>
-    <section class="contact-band wrap" id="contacto"><div class="contact-box"><div><h2>¿Tienes una idea que merece orden?</h2><p>Cuéntanos qué tarea te gustaría hacer más sencilla.</p></div><a class="button" href="mailto:einanovastudio@gmail.com">Escríbenos</a></div></section>
+    <section class="wrap faq" id="preguntas">
+      <div class="section-head"><div><span class="kicker">Antes de empezar</span><h2>Las cosas claras.</h2></div><p>Un estudio cercano, con proyectos que avanzan paso a paso.</p></div>
+      <details><summary>¿Ya se pueden utilizar las aplicaciones?</summary><p>TurnoVial, Míster Cantera, Mi Compra y EVBitácora están en desarrollo. Escríbenos indicando qué proyecto te interesa para consultar su estado y las próximas novedades.</p></details>
+      <details><summary>¿A quién se dirigen los proyectos?</summary><p>Trabajamos en herramientas para autoescuelas, entrenadores de fútbol base, organización de compras y registro de cargas de vehículos eléctricos.</p></details>
+      <details><summary>¿Cómo puedo proponer una idea o colaborar?</summary><p>Escribe a <a href="mailto:einanovastudio@gmail.com">einanovastudio@gmail.com</a> con la tarea que quieres simplificar y cómo la resuelves hoy.</p></details>
+    </section>
+    <section class="contact-band wrap" id="contacto"><div class="contact-box"><div><h2>¿Tienes una idea que merece orden?</h2><p>Cuéntanos qué tarea te gustaría hacer más sencilla.<br><a href="mailto:einanovastudio@gmail.com">einanovastudio@gmail.com</a></p></div><a class="button" href="mailto:einanovastudio@gmail.com">Escríbenos</a></div></section>
   </main>
   <footer class="wrap"><img class="wordmark footer-logo" src="/assets/eina-nova-studio.svg" alt="Eina Nova Studio"><span>© <span id="year">2026</span> Eina Nova Studio · Estudio independiente</span><a class="social-link" href="https://www.instagram.com/einanovastudio/" target="_blank" rel="noopener noreferrer" aria-label="Eina Nova Studio en Instagram">Instagram <span aria-hidden="true">↗</span></a></footer>
 </body>
