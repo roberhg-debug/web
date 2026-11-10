@@ -1,0 +1,12 @@
+# PROPUESTA — no activa. Formato de Cloudflare Pages / Netlify (fichero `_headers` en la raíz publicada).
+# Su efecto depende del hosting: el alojamiento actual (chatgpt.site) puede no leerlo.
+# Si se usa, copiar a dist/_headers al migrar. Probar antes con Content-Security-Policy-Report-Only.
+# Nota: la capa de Cloudflare inyecta un script inline de gestión de bots; si la CSP lo bloquea,
+# no afecta al contenido, pero se vería un aviso en consola.
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+  X-Frame-Options: DENY
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'
