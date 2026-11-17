@@ -22,3 +22,11 @@ Reglas: no force push, no tocar main sin avisar, no subir secretos.
 - `propuestas/_headers`: cabeceras de seguridad propuestas (no activas; dependen del hosting).
 - Previsualizar: `cd dist && python3 -m http.server 8000`.
 - Pendiente (decide Roberto): completar marcadores, crear repo privado `web`, publicar, migrar hosting.
+
+## Analítica y chat (preparados, sin publicar, 2026-11-15)
+- Umami Cloud: script COMENTADO en las 4 páginas con `WEBSITE_ID`; eventos `data-umami-event` en botones. Activar solo con ID real y publicando a la vez privacidad/cookies actualizadas.
+- Chat IA: `dist/assets/chat.js` + `chat.css`, cargado al final de `index.html` con `data-endpoint`/`data-whatsapp` en PENDIENTE (mientras tanto no se muestra). Worker en `../workers/eina-chat-worker` (sin desplegar). privacidad.html con marcadores `[COMPLETAR]` sobre el proveedor del modelo. Falta el número de WhatsApp (no inventar).
+
+## Hosting REAL (verificado 2026-11-17)
+- `www.eina-nova.es` → CNAME `roberhg-debug.github.io`: se sirve desde GitHub Pages, rama `gh-pages` (raíz = contenido de `dist/`, con CNAME) del repo `roberhg-debug/web`. Lo de Codex/OpenAI de arriba está obsoleto. Publicar = copiar `dist/` a `gh-pages` y push (sin force; no tocar `main`).
+- Umami activo (ID f9acebe6-…, cuenta einanovastudio@gmail.com, región EU) y chat IA activo (Worker eina-chat-proxy, ver workers/eina-chat-worker/CLAUDE.md).

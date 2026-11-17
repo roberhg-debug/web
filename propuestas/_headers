@@ -1,6 +1,7 @@
 # PROPUESTA — no activa. Formato de Cloudflare Pages / Netlify (fichero `_headers` en la raíz publicada).
 # Su efecto depende del hosting: el alojamiento actual (chatgpt.site) puede no leerlo.
 # Si se usa, copiar a dist/_headers al migrar. Probar antes con Content-Security-Policy-Report-Only.
+# Si se activan Umami y el chat: script-src añade https://cloud.umami.is ; connect-src añade https://api-gateway.umami.is y la URL del Worker del chat (https://eina-chat-proxy.<subdominio>.workers.dev). Comprobar el dominio exacto de envío de Umami en su documentación.
 # Nota: la capa de Cloudflare inyecta un script inline de gestión de bots; si la CSP lo bloquea,
 # no afecta al contenido, pero se vería un aviso en consola.
 /*
